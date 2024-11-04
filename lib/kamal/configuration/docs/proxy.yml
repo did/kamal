@@ -49,6 +49,11 @@ proxy:
   # Defaults to `false`:
   ssl: true
 
+  # TLSOnDemandURL
+  #
+  # Next big thing after...
+  tls_on_demand_url: "http://example.com/check_host"
+
   # Response timeout
   #
   # How long to wait for requests to complete before timing out, defaults to 30 seconds:
