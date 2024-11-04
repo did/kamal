@@ -80,6 +80,17 @@ proxy:
   # will forward them if it is set to `false`.
   forward_headers: true
 
+  # TLSOnDemandURL
+  #
+  # If you want to use TLS on demand, you can set this to the URL of the endpoint that will
+  # check if the request is for a valid host.
+  #
+  # The endpoint should return a 200 status code if the request is for a valid host, and a 404
+  # status code otherwise.
+  #
+  # The endpoint should return a JSON object with the following fields:
+  tls_on_demand_url: "http://example.com/check_host"
+
   # Response timeout
   #
   # How long to wait for requests to complete before timing out, defaults to 30 seconds:
